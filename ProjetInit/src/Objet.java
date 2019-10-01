@@ -3,6 +3,8 @@ public class Objet {
 
 	private String attribut;
 	
+	private static String staticAttribut = "Cet attribut est static";
+	
 	public String getAttribut() {
 		return attribut;
 	}
@@ -19,4 +21,8 @@ public class Objet {
 		this.attribut = attribut;
 	}
 	
+	
+	public static void staticDisplay() {
+		System.out.println(staticAttribut);
+	}
 }
