@@ -25,4 +25,12 @@ public class Objet {
 	public static void staticDisplay() {
 		System.out.println(staticAttribut);
 	}
+	
+	public void test(int i) throws Exception {
+		if(i == 0) {
+			throw new Exception("test");
+		} else {
+			System.out.println("Youpi");
+		}
+	}
 }
