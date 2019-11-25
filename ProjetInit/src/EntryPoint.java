@@ -42,6 +42,11 @@ public class EntryPoint {
 		// Connection base de données
 		MySQLManager msm = MySQLManager.getInstance();
 		msm.displayUserId();
+		//msm.insertUser("test", "mdp");
+		
+		msm.connectUserSecure("toto", "toto");
+		msm.connectUserSecure("romain", "romain");
+		msm.connectUserUnsecure("romain'; -- ", "");
+		msm.connectUserSecure("romain'; -- ", "");		
 	}
-
 }

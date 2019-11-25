@@ -1,5 +1,6 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -46,6 +47,63 @@ public class MySQLManager {
 		}
 	}
 
+	public void connectUserUnsecure(String username, String password) {
+		try {
+
+			String query = "SELECT username FROM users WHERE username='" + username + "' AND password ='" + password
+					+ "';";
+			System.out.println(query);
+
+			ResultSet resultat = statement.executeQuery(query);
+
+			if (resultat.next() == false) {
+				System.out.println("Non connecté, " + username + " n'existe pas!");
+			} else {
+				do {
+					String name = resultat.getString("username");
+					System.out.println(name + " est connecté");
+				} while (resultat.next());
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void connectUserSecure(String username, String password) {
+		try {
+			System.out.println("Connexion sécurisée :");
+			String query = "SELECT username FROM users WHERE username=? AND password =?;";
+			System.out.println(query);
+
+			PreparedStatement ps = connection.prepareStatement(query);
+			ps.setString(1, username);
+			ps.setString(2, password);
+
+			ResultSet resultat = ps.executeQuery();
+
+			if (resultat.next() == false) {
+				System.out.println("Non connecté, " + username + " n'existe pas!");
+			} else {
+				do {
+					String name = resultat.getString("username");
+					System.out.println(name + " est connecté");
+				} while (resultat.next());
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void insertUser(String username, String password) {
+		try {
+			String sqlQuery = "INSERT INTO users (username, password) VALUES ('" + username + "', '" + password + "')";
+			int statut = statement.executeUpdate(sqlQuery);
+			System.out.println(statut);
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
 	@Override
 	protected void finalize() throws Throwable {
 		super.finalize();
@@ -57,5 +115,4 @@ public class MySQLManager {
 			}
 		}
 	}
-
 }
