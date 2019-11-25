@@ -8,7 +8,7 @@ ynov.daoexample.dao
 Créer une classe Bootstrap qui contient la fonction main dans le package ynov.daoexample
 
 Créer une classe User dans le package model
-La classe User contient les attributs suivants : firstname, surname, mail, password  (visibilité : private)
+La classe User contient les attributs suivants : id, firstname, surname, mail, password  (visibilité : private)
 Le classe User contient les getters et setters pour tous ses attributs (visibilité : public)
 
 Créer une interface DAOUser dans le package dao
@@ -36,7 +36,7 @@ public class DAOFactory {
 	private MySQLManager manager;
 	private DAOUser daoUser;
 	public DAOFactory() {
-		manager = MySQLManager.getInsance();
+		manager = MySQLManager.getInstance();
 		daoUser = new DAOUserImpl(manager.getConnection());
 	}
 	public DAOUser getDaoUser() {
@@ -54,4 +54,3 @@ public class Bootstrap {
 	}
 
 }
-```
