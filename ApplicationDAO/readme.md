@@ -23,6 +23,7 @@ Créer une classe DAOUserImpl qui implémente l'interface DAOUser dans le packag
 La classe DAOUserImpl contient un attribut connection (java.sql.Connection), visibilité private
 Le classe DAOUserImpl contient un constructeur qui prend en paramètre un objet Connection, 
 cet objet est ensuite affecté à l'attribut connection de la classe
+
 Implémenter les méthodes du DAOUserImpl (au nombre de 5) avec des rêquetes préparées en suivant la logique des prototypes des méthodes
 
 Créer une classe MySQLManager dans le package dao qui reprendra le code que vous aviez fait précédemment.
