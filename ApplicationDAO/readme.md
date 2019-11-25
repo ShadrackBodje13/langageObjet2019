@@ -30,6 +30,7 @@ La classe MySQLManager sera implémentée selon le modèle Singleton. Elle aura 
 
 Créer une classe DAOFactory dans le package dao :
 
+```
 public class DAOFactory {
 	private MySQLManager manager;
 	private DAOUser daoUser;
@@ -41,7 +42,9 @@ public class DAOFactory {
 		return daoUser;
 	}
 } 
+```
 
+```
 public class Bootstrap {
 	public static void main(String[] args) {
 		DAOFactory factory = new DAOFactory();
@@ -50,3 +53,4 @@ public class Bootstrap {
 	}
 
 }
+```
