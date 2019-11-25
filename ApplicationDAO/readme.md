@@ -51,6 +51,26 @@ public class Bootstrap {
 		DAOFactory factory = new DAOFactory();
 		DAOUser daoUser = factory.getDaoUser();
 		System.out.println(daoUser.getUser(1).getName());
+		
+		System.out.println("Lancement du programme");
+		
+		System.out.println("Insertion d'un nouvel utilisateur");
+		// TODO
+
+		System.out.println("Récupération de l'utilisation inséré et affichage");
+		// TODO
+		
+		System.out.println("Modification de l'adresse mail de cet utilisateur");
+		// TODO
+		
+		System.out.println("Récupération de l'utilisation modifié et affichage");
+		// TODO
+		
+		System.out.println("Suppression de l'utilisateur");
+		// TODO
+		
+		System.out.println("Affichage de tous les utilisateurs");
+		// TODO
 	}
 
 }
