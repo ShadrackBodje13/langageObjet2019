@@ -4,7 +4,7 @@
 
 L'objectif est de créer un **blog en JavaEE**. Les fonctionnalités classiques devront être implémentées.
 Le code source devra être herbégé sur un repository git dont j'aurais l'accès (mon compte: romainsessa).
-Le projet devra être déployable dans un serveur Tomcat grâce au fichier .war 
+Le projet devra être déployable dans un serveur Tomcat grâce au fichier .war (téléchargeable du repository)
 
 ## Design
 
@@ -30,7 +30,15 @@ L'application web permettra de :
 ### Edition
 
 L'application web permettre de :
-- Ajouter un nouvel article. (la date sera générée automatiquement)
-- Modifier un article . (la date sera générée automatiquement)
+- Ajouter un nouvel article (la date sera générée automatiquement).
+- Modifier un article (la date sera générée automatiquement).
+- Supprimer un article.
 
+## Bonus
+
+Mise en place d'une connexion utilisateur via les fonctionnalités suivantes :
+- Créer d'un compte (username / password)
+- Se connecter
+- Se déconnecter
+- Lors de la création de l'article, l'auteur est automatiquement récupéré grâce à l'utilisateur connecté.
 
