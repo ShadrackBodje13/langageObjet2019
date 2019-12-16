@@ -4,7 +4,7 @@
 
 L'objectif est de créer un **blog en JavaEE**. Les fonctionnalités classiques devront être implémentées.
 Le code source devra être herbégé sur un repository git dont j'aurais l'accès (mon compte: romainsessa).
-Le projet devra être déployable dans un serveur Tomcat grâce au fichier .war (téléchargeable du repository)
+Le projet devra être déployable dans un serveur Tomcat grâce au fichier .war (téléchargeable du repository).
 
 ## Design
 
@@ -36,9 +36,15 @@ L'application web permettre de :
 
 ## Bonus
 
+**Système de connexion**
 Mise en place d'une connexion utilisateur via les fonctionnalités suivantes :
-- Créer d'un compte (username / password)
-- Se connecter
-- Se déconnecter
+- Créer un compte (username / password).
+- Se connecter.
+- Se déconnecter.
 - Lors de la création de l'article, l'auteur est automatiquement récupéré grâce à l'utilisateur connecté.
+
+**Système de commentaire**
+Lors de la visualisation d'un article de façon unitaire, des commentaires peuvent être ajoutés, supprimés et visualisés.
+Il faut être connecté pour ajouter un commentaire ou supprimer un commentaire que l'on a ajouté (impossible de supprimer le commenaire d'une autre personne).
+
 
