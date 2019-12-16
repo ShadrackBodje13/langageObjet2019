@@ -3,8 +3,9 @@
 ## Overview
 
 L'objectif est de créer un **blog en JavaEE**. Les fonctionnalités classiques devront être implémentées.
-Le code source devra être herbégé sur un repository git dont j'aurais l'accès (mon compte: romainsessa).
-Le projet devra être déployable dans un serveur Tomcat grâce au fichier .war (téléchargeable du repository).
+Le code source devra être herbégé **sur un repository git** dont j'aurais l'accès (mon compte: romainsessa).
+Le projet sera construit avec **l'archetype webapp de Maven.**
+Le projet devra être **déployable dans un serveur Tomcat** grâce au fichier .war (téléchargeable du repository).
 
 ## Design
 
