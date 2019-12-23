@@ -1,5 +1,13 @@
 # PROJET FINAL : BLOG
 
+** EN CAS D'ABSENCE A MON COURS SUITE AUX GREVES, J'AUTORISE LA REALISATION DU PROJET AVEC UNE VISUALISATION DANS LA CONSOLE AU LIEU D'UNE PAGE WEB.**
+** AFIN QUE JE VALIDE CETTE ALTERNATIVE, VEUILLEZ M'INDIQUER VOTRE LIEU D'HABITATION.** 
+** CEUX QUI NE SONT PAS VENUS ALORS QU'ILS AVAIENT DES TRANSPORTS AUX HEURES DE POINTES MAIS NE VOULAIENT PAS ATTENDRE UNE DEMI JOURNEE SUR PLACE N'ONT PAS LE DROIT A CETTE ALTERNATIVE.**
+** C'EST UNE EXCUSE NON RECEVABLE.**
+
+DATE DE RENDU : **Dimanche 05 janvier 2020.**
+ENVOYER PAR MAIL à romain.sessa@ynov.com : nom, prénom, groupe, lien github du projet et adresse postale si projet alternatif. **Si le mail ne contient pas ses informations, aucun correction!** 
+
 ## Overview
 
 L'objectif est de créer un **blog en JavaEE**. Les fonctionnalités classiques devront être implémentées.
